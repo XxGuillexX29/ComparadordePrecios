@@ -1,0 +1,43 @@
+<!DOCTYPE <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Comparador de precios</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="comparador.css" /
+    </head>
+    <body>
+        <div class="container">
+            <h1>Lista de Compra</h1>
+            <label for="listaCompra">LISTA DE COMPRA</label>
+            <input type="text" id="listaCompra" onkeyup="this.value = this.value.toLowerCase();">
+            <label for="productos">PRODUCTOS</label>
+            <input type="text" id="productos" onkeyup="this.value = this.value.toLowerCase();">
+            <label for="precio">PRECIOS</label>
+            <input type="text" id="precio">
+            <label for="comercio">COMERCIO</label>
+            <input type="text" id="comercio" onkeyup="this.value = this.value.toUpperCase();">
+            <label for="calle">CALLE-Nro</label>
+            <input type="text" id="calle" onkeyup="this.value = this.value.toUpperCase();">
+            <button onclick="guardar()">Guardar</button>
+            <button onclick="listarProductos()">Listar productos</button>
+            <button onclick="masBarato()">Mas Barato</button>
+          </div>
+          
+          <div class="orange-box" id="listarProductos"></div>
+          <div class="green-box" id="masBarato"></div>
+          
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+    </body>
+</html>
